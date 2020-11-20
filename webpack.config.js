@@ -6,6 +6,10 @@ module.exports = () => ({
   mode: 'development',
   // devtool: 'source-map',
 
+  watchOptions: {
+    ignored: /\.#|node_modules|~$/,
+  },
+
   module: {
     rules: [
       {
